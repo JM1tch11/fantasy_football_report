@@ -14,10 +14,10 @@ folder = "//home//hgupta//fantasy-football-league-report//simulation_tables//"
 # only run simulation on wednesday mornings (takes too long)
 if (weekday == 2) & (hour < 10):
     # load data for simulation
-    league_id = 1382012
-    season = 2021
-    swid = "{E01C2393-2E6F-420B-9C23-932E6F720B61}"
-    espn = "AEAVE3tAjA%2B4WQ04t%2FOYl15Ye5f640g8AHGEycf002gEwr1Q640iAvRF%2BRYFiNw5T8GSED%2FIG9HYOx7iwYegtyVzOeY%2BDhSYCOJrCGevkDgBrhG5EhXMnmiO2GpeTbrmtHmFZAsao0nYaxiKRvfYNEVuxrCHWYewD3tKFa923lw3NC8v5qjjtljN%2BkwFXSkj91k2wxBjrdaL5Pp1Y77%2FDzQza4%2BpyJq225y4AUPNB%2FCKOXYF7DTZ5B%2BbuHfyUKImvLaNJUTpwVXR74dk2VUMD9St"
+    league_id = 791545
+    season = 2022
+    swid = "{196DA414-D50C-4582-AE60-ED4D42FDF07A}"
+    espn = "AEBi3NIMa0rd29d99v48uQ4lu7P1Ust1PdDWyA3653RtuVXWrEYdCOK5HnFBMSdwUtAQPgHOXDexUA%2F45%2BEb4H4GBNumz5iHcn41KTmt3PJoisqKLqmGnFEfDNF7gqVKpKCSahHMoXY%2Bw8aPzzbYYz0%2FNG1hTVvZn4AprZpBxSdDr98ZcW5ZBe7bzojSyJpjN%2BI%2F7855S2sOaIrZ1B8Ov9Df9CylwpToQy5TsYYECJDu6YHl3%2B9YHasZrAPpEDSo2wR0HhP%2FWZzsK9m9bLVC8uSYq0RvtKpGe%2FlGInjZoI2ehUa%2Fthj0or0DJNSnCLcRGP8%3D"
     d = load_data(league_id, season, swid, espn)
 
     regular_season_end = get_params(d)["regular_season_end"]
